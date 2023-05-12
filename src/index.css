@@ -6,3 +6,23 @@
   margin: 0;
   padding: 0;
 }
+
+html{
+  background-color: #0d1b2a;
+}
+
+ol { counter-reset: item; }
+ol li { display: block; }
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: #52b788;
+}
+
+a{
+  transition: all .3s ease;
+}
+
+a:hover{
+  color: #52b788;
+}
