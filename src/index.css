@@ -19,10 +19,17 @@ ol li:before {
     color: #52b788;
 }
 
+li{
+  font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+}
 a{
   transition: all .3s ease;
 }
 
 a:hover{
   color: #52b788;
+}
+
+p{
+  display: inline;
 }
