@@ -1,0 +1,56 @@
+:root {
+  --main-text-color: #52b788;
+}
+ol {
+  counter-reset: item;
+}
+ol li {
+  display: block;
+}
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: var(--main-text-color);
+}
+
+li {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--main-text-color);
+}
+
+p {
+  display: inline;
+}
+
+.header {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#bars-menu {
+  display: none;
+}
+
+.active {
+  display: flex !important;
+  flex-direction: column !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  ul {
+    display: none !important;
+  }
+
+  #bars-menu {
+    display: flex;
+  }
+}

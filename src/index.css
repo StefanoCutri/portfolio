@@ -10,37 +10,3 @@
 html {
   background-color: #0d1b2a;
 }
-
-ol {
-  counter-reset: item;
-}
-ol li {
-  display: block;
-}
-ol li:before {
-  content: counter(item) ". ";
-  counter-increment: item;
-  color: #52b788;
-}
-
-li {
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-}
-a {
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: #52b788;
-}
-
-p {
-  display: inline;
-}
-
-
-@media (max-width: 768px) {
-  ul {
-    display: none !important;
-  }
-}
