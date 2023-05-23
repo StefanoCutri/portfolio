@@ -10,41 +10,33 @@ export const Header = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between px-20 text-[#f5f1ed] py-4">
-      <a href="/">
-        <p className="text-[#52b788] text-3xl font-bold font-mono header">
-          Stefano Cutri
-        </p>
+    <nav className="navigation">
+      <a href="/" className="brand-name">
+        Stefano Cutri
       </a>
-      <ul className={`flex flex-row w-1/2 justify-around items-center list-none text-sm ${showNavbar && 'active'}`}>
-        <li>
-          <a href="#">
-            <p className="text-[#52b788] px-1">01.</p>
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <p className="text-[#52b788] px-1">02.</p>
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <p className="text-[#52b788] px-1">03.</p>
-            Experience
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <p className="text-[#52b788] px-1">04.</p>
-            Contact
-          </a>
-        </li>
-      </ul>
-      <div className={`flex flex-row justify-center items-center ${showNavbar && 'active-bars'}`} id="bars-menu" onClick={handleShowNavbar}>
+      <button className="hamburger" onClick={handleShowNavbar}>
+        {/* icon from heroicons.com */}
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
+      </button>
+      <div
+        className={showNavbar ? "navigation-menu expanded" : "navigation-menu"}
+      >
+        <ul>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/skills">Skills</a>
+          </li>
+          <li>
+            <a href="/experience">Experience</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+    
   );
 };
