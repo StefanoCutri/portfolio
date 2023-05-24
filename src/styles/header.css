@@ -1,6 +1,8 @@
 :root {
   --main-text-color: #52b788;
-  --main-bg-color: #0d1b2a;
+  --main-bg-color: #0f2338;
+  --secondary-bg-color: #173452;
+  --text-white: #fff;
 }
 
 li {
@@ -27,6 +29,12 @@ p {
   display: none;
 }
 
+nav {
+  position: fixed !important;
+  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75) !important;
+}
 .active {
   display: flex !important;
   flex-direction: column !important;
@@ -59,17 +67,37 @@ p {
 .navigation-menu ul {
   display: flex;
   padding: 0;
+  z-index: 1;
 }
 .navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
 }
 .navigation-menu li a {
+  color: var(--text-white);
   text-decoration: none;
   display: block;
   width: 100%;
-  color: var(--main-text-color);
+  transition: all 1s ease-in;
 }
+.navigation-menu li ::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navigation-menu li :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .hamburger {
   border: 0;
   height: 40px;
@@ -99,7 +127,6 @@ p {
     width: 100%;
     height: calc(100vh - 60px);
     background-color: var(--main-bg-color);
-    border-top: .5px solid black;
   }
   .navigation-menu li {
     text-align: center;
@@ -107,13 +134,15 @@ p {
   }
   .navigation-menu li a {
     width: 100%;
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
   }
   .navigation-menu ul {
     /* previous styles */
     display: none;
   }
   .navigation-menu.expanded ul {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
