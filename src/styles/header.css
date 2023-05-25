@@ -80,24 +80,30 @@ nav {
   width: 100%;
   transition: all 1s ease-in;
 }
-.navigation-menu li ::after {
+
+a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 4;
   content: "";
-  position: absolute;
-  width: 10%;
-  transform: scaleX(0);
+  display: block;
   height: 2px;
-  bottom: 0;
-  right: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  left: 50%;
+  position: absolute;
+  background: var(--main-text-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
-
-.navigation-menu li :hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
-
 .hamburger {
   border: 0;
   height: 40px;

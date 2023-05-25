@@ -23,9 +23,9 @@ export const Header = () => {
       className="navigation px-5 flex flex-row justify-between"
       ref={backgroundRef}
     >
-      <a href="/" className="brand-name">
+      <p href="/" className="brand-name">
         Stefano Cutri
-      </a>
+      </p>
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
       </button>
