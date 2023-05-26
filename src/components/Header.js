@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { slideInLeft } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import "../styles/header.css";
@@ -24,7 +24,7 @@ export const Header = () => {
       ref={backgroundRef}
     >
       <p href="/" className="brand-name">
-        Stefano Cutri
+        Portfolio
       </p>
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
