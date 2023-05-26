@@ -5,10 +5,10 @@ import "./index.css";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <About/>
-    </div>
+    </>
   );
 };
 

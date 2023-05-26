@@ -1,0 +1,17 @@
+:root {
+    --main-text-color: #52b788;
+    --main-bg-color: #0f2338;
+    --secondary-bg-color: #173452;
+    --text-white: #fff;
+}
+
+section{
+    background-color: var(--main-bg-color);
+    padding: 0;
+    height: 100vh;
+    color: var(--main-text-color);
+}
+
+h1{
+    font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif
+}
