@@ -10,10 +10,13 @@
 div{
     background-color: var(--main-bg-color);
     padding: 0;
-    height: 100%;
     color: var(--main-text-color);
 }
 
 h1{
     font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif
+}
+
+a:hover{
+    color: var(--main-text-color) !important;
 }

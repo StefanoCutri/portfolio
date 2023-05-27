@@ -38,7 +38,7 @@ export const Header = () => {
         >
           <ul>
             <li className="animate__slideInLeft">
-              <a href="/about">About</a>
+              <a href="/#about">About</a>
             </li>
             <li className="animate__slideInLeft">
               <a href="/skills">Skills</a>

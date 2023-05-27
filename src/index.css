@@ -11,3 +11,8 @@ html, body {
   height: 100vh;
   /* background-color: #0f2338; */
 }
+
+.info-container{
+  height: 100vh;
+  outline: 1px solid red;
+}
