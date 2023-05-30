@@ -3,6 +3,7 @@ import { Info } from "./components/Info";
 import { About } from "./components/About";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { Skills } from "./components/Skills";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Info />
       <About/>
+      <Skills/>
     </>
   );
 };

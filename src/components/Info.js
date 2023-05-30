@@ -19,6 +19,7 @@ export const Info = () => {
             className="p-0 blank-link text-[#52b788]"
             href="https://github.com/stefanocutri"
             target="_blank"
+            rel="noreferrer"
           >
             here.
           </a>

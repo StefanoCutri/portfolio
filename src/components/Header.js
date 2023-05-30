@@ -41,7 +41,7 @@ export const Header = () => {
               <a href="/#about">About</a>
             </li>
             <li className="animate__slideInLeft">
-              <a href="/skills">Skills</a>
+              <a href="/#skills">Skills</a>
             </li>
             <li className="animate__slideInLeft">
               <a href="/experience">Experience</a>

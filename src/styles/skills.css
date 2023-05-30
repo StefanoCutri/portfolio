@@ -1,0 +1,22 @@
+:root {
+    --main-text-color: #52b788;
+    --main-bg-color: #0f2338;
+    --secondary-bg-color: #173452;
+    --text-white: #fff;
+}
+
+.technologies {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  overflow: hidden;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.tech-item::before{
+    content: '\25ba';
+    padding-left: 0.5em;
+    color: var(--main-text-color);
+}
