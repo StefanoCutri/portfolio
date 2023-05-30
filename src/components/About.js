@@ -16,12 +16,12 @@ export const About = () => {
           <h2 className="font-bold text-3xl">About me</h2>
         </div>
         <div className="flex justify-start pl-6">
-        <p className="text-[#8892b0] text-md w-[82%] ">Hello! My name is Stefano and enjoy building web and mobile apps!
-        My passion for technology started back in 2020
+        <p className="text-[#8892b0] text-md pr-5">Hello! My name is Stefano and enjoy building web and mobile apps! <br/>
+        My passion for technology started back in 2020 while I was in lockdown due to the pandemic and saw a Web Development free course and thought it could be a good idea to give it a try!
         </p>
         </div>
       </div>
-      <img src={me} className="h-[50%] m-auto rounded-full"/>
+      <img src={me} className="h-[50%] m-auto rounded-full shadow-2xl"/>
       {/* 
       <div className="flex flex-col items-end">
         <div className="flex flex-row items-center mb-4 text-white text-5xl">
