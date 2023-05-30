@@ -21,7 +21,7 @@ export const About = () => {
         </p>
         </div>
       </div>
-      <img src={me} className="h-[50%] rounded-full"/>
+      <img src={me} className="h-[50%] m-auto rounded-full"/>
       {/* 
       <div className="flex flex-col items-end">
         <div className="flex flex-row items-center mb-4 text-white text-5xl">
