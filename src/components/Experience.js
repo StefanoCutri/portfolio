@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Experience = () => {
   return (
-    <div>Experience</div>
+    <div className='info-container mt-[60%]' id='experience'>Experience</div>
   )
 }

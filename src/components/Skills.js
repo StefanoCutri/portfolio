@@ -33,7 +33,7 @@ export const Skills = () => {
           <li className="text-sm tech-item text-white"> Redux</li>
         </ul>
       </div>
-      <div className="pb-20">
+      <div className="cards-container">
       {
         projects.map((project)=>(
           <ProjectCard key={project.id} title={project.title} description={project.description} respository={project.repository} hosted={project.hosted} />

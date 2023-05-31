@@ -20,7 +20,7 @@ export const About = () => {
         </div>
         <div className="flex justify-start pl-6">
           <p className="text-[#8892b0] text-md pr-5">
-            Hello! My name is Stefano and enjoy building web and mobile apps!{" "}
+            Hello! My name is Stefano and I enjoy building web and mobile apps!{" "}
             <br />
             My passion for technology started back in 2020 while I was in
             lockdown due to the pandemic and saw a Web Development free course
