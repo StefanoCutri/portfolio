@@ -20,3 +20,11 @@
     padding-left: 0.5em;
     color: var(--main-text-color);
 }
+
+.project-link{
+  margin:  .4rem;
+}
+
+.project-link:hover i{
+  color: var(--main-text-color) !important;
+}

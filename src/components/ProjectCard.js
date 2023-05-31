@@ -6,14 +6,13 @@ export const ProjectCard = ({ title, description, respository, hosted }) => {
       <h3 className="text-white font-bold text-xl mb-2">{title}</h3>
       <p className=" font-extralight font-sans text-[#8892b0]">{description}</p>
       <div className="bg-[#00171f] mt-4 mb-3 flex flex-row">
-        <a>
+        <a href={respository} className="project-link">
           <i className="fa-brands fa-github text-[#ccd6f6]  mr-3"></i>
         </a>
-        <a>
+        <a href={hosted} className="project-link">
           <i className="fa-solid fa-up-right-from-square text-[#ccd6f6]"></i>
         </a>
       </div>
-      {/* <a href={link}>Project</a> */}
     </div>
   );
 };
