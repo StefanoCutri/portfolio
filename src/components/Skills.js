@@ -1,15 +1,17 @@
 import React from "react";
 import "../styles/skills.css";
 import { ProjectCard } from "./ProjectCard";
+import projects from '../data/projects.json';
+console.log(projects);
 
 export const Skills = () => {
   return (
     <div id="skills" className="info-container">
       <div className="mt-[12%]">
         <div className="flex flex-row items-center px-4 mb-3">
-          <h2 className="text-2xl font-bold mr-5 ">Some of my projects</h2>
+          <h2 className="text-3xl font-bold mr-5 ">Some of my projects</h2>
           <div
-            className="bg-[#52b788] h-1"
+            className="bg-[#52b788]"
             style={{
               height: 0.5,
               width: "20%",
@@ -31,10 +33,11 @@ export const Skills = () => {
           <li className="text-sm tech-item text-white"> Redux</li>
         </ul>
       </div>
-      <ProjectCard title="Movies - React" description="React App that tries to immitate the " />
-      <ProjectCard title="The Button" description="Reddit social experiment" />
-      <ProjectCard title="The Button" description="Reddit social experiment" />
-      <ProjectCard title="The Button" description="Reddit social experiment" />
+      {
+        projects.map((project)=>(
+          <ProjectCard key={project.id} title={project.title} description={project.description} respository={project.repository} hosted={project.hosted} />
+        ))
+      }
     </div>
   );
 };
