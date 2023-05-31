@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "title": "Movies - React",
+        "title": "Movies App",
         "description": "Movies Application using React and consumming data with Axios from TMBD Api. This app tries to replicate the online movies platforms interfaces, using basic navigation between screens with React Router DOM.",
-        "repository": "",
-        "hosted": ""
+        "repository": "https://github.com/StefanoCutri/movies-react",
+        "hosted": "https://movies-react-nu.vercel.app/"
     },
     {
         "id": 2,
-        "title": "Movies - React",
-        "description": "Movies Application using React and consumming data with Axios from TMBD Api. This app tries to replicate the online movies platforms interfaces",
-        "repository": "",
-        "hosted": ""
+        "title": "The Button",
+        "description": "This is a challenge I've built some time ago that immitates the online meta-game and social experiment that Reddit launched in 2015.",
+        "repository": "https://github.com/StefanoCutri/the-button",
+        "hosted": "https://stefanocutri.github.io/the-button/"
     },
     {
         "id": 3,
-        "title": "Movies - React",
-        "description": "Movies Application using React and consumming data with Axios from TMBD Api. This app tries to replicate the online movies platforms interfaces",
-        "repository": "",
-        "hosted": ""
+        "title": "Giph Expert",
+        "description": "Basic Hook-Based App that shows animated giphs from Giphy Api that can be filtered by a search query. ",
+        "repository": "https://github.com/StefanoCutri/React-GiphExpert",
+        "hosted": "https://react-giph-expert-xjt8.vercel.app"
     },
     {
         "id": 4,
-        "title": "Movies - React",
-        "description": "Movies Application using React and consumming data with Axios from TMBD Api. This app tries to replicate the online movies platforms interfaces",
-        "repository": "",
-        "hosted": ""
+        "title": "Calendar App",
+        "description": "MOne of the first React Applications I've built, using React-Big-Calendar to make CRUD operations in the calendar with the help of React Modal.",
+        "repository": "https://github.com/StefanoCutri/calendar-app",
+        "hosted": "https://calendar-mqz37rje0-stefanocutri.vercel.app/"
     }
 ]

@@ -6,8 +6,8 @@ import "../styles/skills.css";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="info-container pb-4">
-      <div className="mt-[12%]">
+    <div id="skills" className="info-container pb-4 mt-[20%]">
+      <div>
         <div className="flex flex-row items-center px-4 mb-3">
           <h2 className="text-3xl font-bold mr-5 ">Some of my projects</h2>
           <div
