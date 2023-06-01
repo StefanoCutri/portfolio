@@ -6,20 +6,19 @@ import "../styles/skills.css";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="info-container pb-4 mt-[25%]">
-      <div>
-        <div className="flex flex-row items-center justify-center px-4 mb-3">
-          <h2 className="text-3xl font-bold mr-5 ">Some of my projects</h2>
+    <div id="skills" className="pb-20">
+        <div className="flex flex-row items-center justify-center mb-3">
+          <h2 className="text-2xl font-bold">Some of my projects</h2>
           <div
-            className="bg-[#52b788]"
+            className="bg-[#52b788] ml-3"
             style={{
               height: 0.5,
-              width: "20%",
+              width: "25%",
             }}
           ></div>
         </div>
-        <div className="flex justify-start pl-12">
-          <p className="text-[#8892b0] text-sm pr-5">
+        <div className="flex justify-start px-4">
+          <p className="text-[#8892b0] text-sm">
             Here are some of my works using these technologies:
             <br />
           </p>
@@ -32,7 +31,6 @@ export const Skills = () => {
           <li className="text-sm tech-item text-white"> Node. js</li>
           <li className="text-sm tech-item text-white"> Redux</li>
         </ul>
-      </div>
       <div className="cards-container">
       {
         projects.map((project)=>(

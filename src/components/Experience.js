@@ -1,21 +1,27 @@
 import React from "react";
+import works from '../data/work.json';
+import { WorkCard } from "./WorkCard";
 
 export const Experience = () => {
   return (
-    <div className="info-container mt-[70%]" id="experience">
-      <div className="flex flex-row items-center justify-center px-4 mb-3">
+    <div className="info-container" id="experience">
+      <div className="flex flex-row items-center justify-center mb-3">
+      <h2 className="font-bold text-2xl">Where I've worked</h2>
         <div
-          className="bg-[#52b788] h-1 mr-5"
+          className="bg-[#52b788] h-1 ml-5"
           style={{
             height: 0.5,
-            width: "30%",
+            width: "35%"
           }}
         ></div>
-        <h2 className="font-bold text-3xl">Where I've worked</h2>
-        <div>
-
-        </div>
       </div>
+        <div>
+        {
+          works.map((work)=> (
+            <WorkCard />
+          ))
+        }
+        </div>
     </div>
   );
 };

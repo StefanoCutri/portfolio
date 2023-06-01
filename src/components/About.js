@@ -4,7 +4,7 @@ import me from "../assets/me.jpeg";
 export const About = () => {
   return (
     <div
-      className="flex flex-col items-start justify-evenly pt-[12%] info-container"
+      className="flex flex-col items-start justify-evenly info-container"
       id="about"
     >
       <div className="flex flex-col">
@@ -16,7 +16,7 @@ export const About = () => {
               width: "50%",
             }}
           ></div>
-          <h2 className="font-bold text-3xl">About me</h2>
+          <h2 className="font-bold text-2 xl">About me</h2>
         </div>
         <div className="flex justify-start pl-6">
           <p className="text-[#8892b0] text-md pr-5">
