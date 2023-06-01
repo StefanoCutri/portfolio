@@ -6,9 +6,9 @@ import "../styles/skills.css";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="info-container pb-4 mt-[20%]">
+    <div id="skills" className="info-container pb-4 mt-[25%]">
       <div>
-        <div className="flex flex-row items-center px-4 mb-3">
+        <div className="flex flex-row items-center justify-center px-4 mb-3">
           <h2 className="text-3xl font-bold mr-5 ">Some of my projects</h2>
           <div
             className="bg-[#52b788]"
@@ -18,7 +18,7 @@ export const Skills = () => {
             }}
           ></div>
         </div>
-        <div className="flex justify-start pl-6">
+        <div className="flex justify-start pl-12">
           <p className="text-[#8892b0] text-sm pr-5">
             Here are some of my works using these technologies:
             <br />

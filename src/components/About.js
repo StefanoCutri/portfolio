@@ -8,7 +8,7 @@ export const About = () => {
       id="about"
     >
       <div className="flex flex-col">
-        <div className="flex flex-row items-center px-4 mb-3">
+        <div className="flex flex-row items-center justify-center px-4 mb-3">
           <div
             className="bg-[#52b788] h-1 mr-5"
             style={{
