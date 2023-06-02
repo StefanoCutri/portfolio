@@ -4,7 +4,7 @@ import me from "../assets/me.jpeg";
 export const About = () => {
   return (
     <div
-      className="flex flex-col items-start justify-evenly info-container"
+      className="flex flex-col items-start justify-evenly info-container py-3"
       id="about"
     >
       <div className="flex flex-col">

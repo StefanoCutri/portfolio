@@ -6,7 +6,7 @@ import "../styles/skills.css";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="pb-20">
+    <div id="skills" className="pb-20 py-3">
         <div className="flex flex-row items-center justify-center mb-3">
           <h2 className="text-2xl font-bold">Some of my projects</h2>
           <div
