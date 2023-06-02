@@ -2,16 +2,24 @@
     {
         "id": 1,
         "company": "YouPrism",
-        "workingTime": "Jun - Nov (2022)",
+        "workingTime": "Jun - Nov 2022",
         "role": "Web Developer",
-        "description": "I worked in this company as a Web Developer, creating dynamic web apps with HTML - CSS - JS. I also controlled the bugfixing to mantain the apps working. The company also worked as a CRM, and I was in charge to do other kind of tasks. On of the most important roles was the communication with the clients. I communicated directly with them to understand better what was happening. If there was any problem or they wanted to make any change, I received the instructions directly."
-        
+        "description": [
+            "I worked in this company as a Web Developer, creating dynamic web apps with HTML - CSS - JS",
+            "Controlled the bugfixing to mantain the apps working",
+            " I communicated directly with the clients to understand perfectly their needs"
+        ]
+       
     },
     {
         "id": 2,
         "company": "Self Employee",
-        "workingTime": "2020 - Now",
+        "workingTime": "Jun 2020 - Present ",
         "role": "Web Developer",
-        "description":  "I worked in this company as a Web Developer, creating dynamic web apps with HTML - CSS - JS. I also controlled the bugfixing to mantain the apps working. The company also worked as a CRM, and I was in charge to do other kind of tasks. On of the most important roles was the communication with the clients. I communicated directly with them to understand better what was happening. If there was any problem or they wanted to make any change, I received the instructions directly."
+        "description": [
+            "Built a lot of web and mobile apps to keep training my skills",
+            "I've been working on personal projects to show my knowledge",
+            "Always learning new skills to mantain myself updated"
+        ]
     }
 ]
