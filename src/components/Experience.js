@@ -15,7 +15,7 @@ export const Experience = () => {
           }}
         ></div>
       </div>
-        <div>
+        <div className="mt-9">
         {
           works.map((work)=> (
             <WorkCard key={work.id} company={work.company} workTime={work.workingTime} role={work.role} description={work.description}/>
