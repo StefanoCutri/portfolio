@@ -29,32 +29,9 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: Raleway;
-  background-color: #16a085;
-}
-
-.copyright {
-  position: absolute;
-  bottom: 0;
-}
-.copyright a {
-  text-decoration: none;
-  color: #16a085;
-}
-.copyright a:hover {
-  text-decoration: underline;
-}
 
 .button {
+  z-index: 1;
   position: relative;
   padding: 1em 1.5em;
   border: none;

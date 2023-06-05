@@ -47,7 +47,7 @@ export const Header = () => {
               <a className="navbar-link" href="/#experience">Experience</a>
             </li>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/contact">Contact</a>
+              <a className="navbar-link" href="/#contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import { WorkCard } from "./WorkCard";
 
 export const Experience = () => {
   return (
-    <div className="info-container py-5" id="experience">
+    <div className="info-container py-5 mt-[10%]" id="experience">
       <div className="flex flex-row items-center justify-center mb-3">
       <h2 className="font-bold text-2xl">Where I've worked</h2>
         <div

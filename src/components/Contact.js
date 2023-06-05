@@ -3,8 +3,8 @@ import "../styles/contact.css";
 
 export const Contact = () => {
   return (
-    <div className="info-container">
-      <div className="flex flex-row items-center justify-center mb-3">
+    <div className="info-container" id="contact">
+      <div className="flex flex-row items-center justify-center mb-3 mt-[12%]">
         <div
           className="bg-[#52b788] h-1 mr-5"
           style={{
@@ -20,9 +20,10 @@ export const Contact = () => {
           contact me do not hesitate to send me a message!
         </p>
       </div>
-      <div className="flex flex-col h-[50%] mt-10 items-center justify-evenly">
-        <button className="button type3">Let's talk!</button>
-        <button className="button type3">Download Resume</button>
+    <div className="flex flex-col h-[40%] items-center justify-evenly">
+    <a href="mailto:stefanocutristecco@gmail.com">
+            <button className="button type3">Let's talk!</button>
+          </a>
       </div>
     </div>
   );

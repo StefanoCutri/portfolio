@@ -11,7 +11,7 @@ export const WorkCard = ({ role, description, workTime, company }) => {
       <ul className="ml-2">
         {
           description.map((item) => (
-            <li className="text-[#8892b0] font-extralight font-sans work-item my-3">{item}</li>
+            <li key={item} className="text-[#8892b0] font-extralight font-sans work-item my-3">{item}</li>
           ))
         }
       </ul>
