@@ -17,14 +17,13 @@ export const Header = () => {
       animationName: Radium.keyframes(slideInLeft, "slideInLeft"),
     },
   };
-
   return (
     <nav
       className="navigation px-5 flex flex-row justify-between"
       ref={backgroundRef}
     >
       <p href="/" className="brand-name">
-        Portfolio
+        Stefano Cutri
       </p>
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>

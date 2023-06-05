@@ -7,7 +7,7 @@ import "../styles/skills.css";
 export const Skills = () => {
   return (
     <div id="skills" className="pb-20 py-3">
-        <div className="flex flex-row items-center justify-center mb-3">
+        <div className="flex flex-row items-center justify-center mb-3 pt-[15%]">
           <h2 className="text-2xl font-bold">Some of my projects</h2>
           <div
             className="bg-[#52b788] ml-3"
@@ -18,7 +18,7 @@ export const Skills = () => {
           ></div>
         </div>
         <div className="flex justify-start px-4">
-          <p className="text-[#8892b0] text-sm">
+          <p className="text-[#8892b0] text-md ml-6 ">
             Here are some of my works using these technologies:
             <br />
           </p>
