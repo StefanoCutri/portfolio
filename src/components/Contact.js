@@ -1,11 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "../styles/contact.css";
+import {
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
   return (
     <div className="info-container" id="contact">
-      <div className="pt-[15%]">
-        <div className="flex flex-row items-center justify-center mb-3 mt-[12%]">
+        <div className="flex flex-row items-center justify-center mb-3">
           <div
             className="bg-[#52b788] h-1 mr-5"
             style={{
@@ -26,7 +31,13 @@ export const Contact = () => {
             <button className="button type3">Let's talk!</button>
           </a>
         </div>
-      </div>
+        <div className="flex flex-row justify-evenly">
+          <FontAwesomeIcon icon={faGithub} color="white"/>
+          <FontAwesomeIcon icon={faLinkedin} color="white"/>
+        </div>
+        <div className="flex justify-center mt-10">
+        <p className="text-white font-mono">Designed and Developed by Stefano Cutri</p>
+        </div>
     </div>
   );
 };

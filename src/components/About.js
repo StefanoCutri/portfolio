@@ -7,7 +7,7 @@ export const About = () => {
       className="flex flex-col items-start justify-evenly info-container py-3"
       id="about"
     >
-      <div className="pt-[10%]">
+      <div className="pt-[18%]">
         <div className="flex flex-col">
           <div className="flex flex-row items-center justify-center px-4 mb-3">
             <div

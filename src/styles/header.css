@@ -29,9 +29,9 @@ p {
 }
 
 nav {
-  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75) !important; */
   position: fixed !important;
   z-index: 2;
 }
@@ -144,6 +144,9 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 9px 28px 22px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 28px 22px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 28px 22px -3px rgba(0,0,0,0.75);
   }
 
 }
