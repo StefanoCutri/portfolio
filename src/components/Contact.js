@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/contact.css";
 
 export const Contact = () => {
   return (
@@ -19,9 +20,9 @@ export const Contact = () => {
           contact me do not hesitate to send me a message!
         </p>
       </div>
-      <div>
-        <div>Let's talk!</div>
-        <div>Download Resume</div>
+      <div className="flex flex-col h-[50%] mt-10 items-center justify-evenly">
+        <button className="button type3">Let's talk!</button>
+        <button className="button type3">Download Resume</button>
       </div>
     </div>
   );

@@ -1,0 +1,106 @@
+:root {
+  --main-text-color: #52b788;
+  --main-bg-color: #0f2338;
+  --secondary-bg-color: #173452;
+  --text-white: #fff;
+}
+/* 
+  .contact-btn{
+    border-color: var(--main-text-color) !important;
+  }
+
+  .contact-btn:hover{
+    transform: translateX(50%)
+  } */
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows on hover/focus as non-hover/focus (even if you have to create a transparent shadow) so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Raleway;
+  background-color: #16a085;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
+.copyright a {
+  text-decoration: none;
+  color: #16a085;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+
+.button.type3 {
+  color: #435a6b;
+}
+.button.type3.type3::after,
+.button.type3.type3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.button.type3.type3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #16a085;
+  border-right-color: #16a085;
+}
+.button.type3.type3::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #16a085;
+  border-left-color: #16a085;
+}
+.button.type3.type3:hover:after,
+.button.type3.type3:hover:before {
+  border-bottom-color: #16a085;
+  border-right-color: #435a6b;
+  border-top-color: #16a085;
+  border-left-color: #16a085;
+  width: 100%;
+  height: 100%;
+}
