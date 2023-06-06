@@ -28,3 +28,25 @@
 .project-link:hover i {
   color: var(--main-text-color) !important;
 }
+
+@media (min-width: 768px) {
+  .skills-header {
+    margin: 0;
+    padding-top: 10%;
+    justify-content: start;
+    padding-left: 1.5rem;
+    justify-content: start;
+  }
+
+  .technologies {
+    justify-content: start !important;
+  }
+
+  .cards-container{
+    display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 10px;
+  padding: 0px;
+  padding: 2rem 0;
+  }
+}

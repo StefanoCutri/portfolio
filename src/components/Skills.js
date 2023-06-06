@@ -7,18 +7,11 @@ import "../styles/skills.css";
 export const Skills = () => {
   return (
     <div id="skills" className="pb-20 py-3">
-        <div className="flex flex-row items-center justify-center mb-3 pt-[15%]">
+        <div className="flex flex-row items-center justify-start pl-[1.5rem] mb-3 pt-[15%] skills-header">
           <h2 className="text-2xl font-bold">Some of my projects</h2>
-          <div
-            className="bg-[#52b788] ml-3"
-            style={{
-              height: 0.5,
-              width: "25%",
-            }}
-          ></div>
         </div>
-        <div className="flex justify-start px-4">
-          <p className="text-[#8892b0] text-md ml-6 ">
+        <div className="flex justify-start px-4 skills-info">
+          <p className="text-[#8892b0] text-md ">
             Here are some of my works using these technologies:
             <br />
           </p>

@@ -9,16 +9,16 @@ export const About = () => {
       id="about"
     >
       <div className="mt-[60%] about">
-        <div className="flex flex-col">
-          <div className="flex flex-row items-center justify-center px-4 mb-3">
+        <div className="flex flex-col justify-start">
+          <div className="flex flex-row items-center justify-start mb-3">
+            <h2 className="font-bold text-2xl ml-6">About me</h2>
             <div
-              className="bg-[#52b788] h-1 mr-5"
+              className="bg-[#52b788] h-1 ml-5"
               style={{
                 height: 0.5,
-                width: "50%",
+                width: "40%",
               }}
             ></div>
-            <h2 className="font-bold text-2 xl">About me</h2>
           </div>
           <div className="flex justify-start pl-6 about-description">
             <p className="text-[#8892b0] text-md pr-5 mb-14">

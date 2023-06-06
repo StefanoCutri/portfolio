@@ -7,6 +7,10 @@
     margin: 0 14%;
     margin-top: 0 !important;
   }
+
+  .about > div > div > h2{
+    margin: 0;
+  }
   .my-image {
     height: 25rem !important;
     position: relative;
@@ -23,7 +27,7 @@
 }
 
 .about-description p{
-  margin-left: 16%;
+  /* margin-left: 16%; */
   width: 100%;
   font-size: 1.1rem;
 }
