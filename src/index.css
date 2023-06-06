@@ -34,3 +34,11 @@ p{
 .info-container {
   height: 100vh;
 }
+
+@media (min-width: 768px) {
+
+  /* .info-container {
+    height: 100% !important;
+  } */
+}
+

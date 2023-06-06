@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 0 14%;
+    margin-top: 0 !important;
+  }
+  .my-image {
+    height: 25rem !important;
+    position: relative;
+    top: 40%;
+  }
+
+#about{
+  padding: 0 !important;
+}
+
+.about-description{
+  padding: 0 !important;
+  justify-content: start !important;
+}
+
+.about-description p{
+  margin-left: 16%;
+  width: 100%;
+  font-size: 1.1rem;
+}
+}

@@ -22,7 +22,7 @@ a:hover{
 }
 
 @media (min-width: 768px) {
- .about-info{
+ .info{
     margin: 12% !important;
  }
 }
