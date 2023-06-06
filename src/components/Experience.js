@@ -16,7 +16,7 @@ export const Experience = () => {
             }}
           ></div>
         </div>
-        <div className="mt-9 flex flex-col justify-around h-[60vh]">
+        <div className="mt-9 flex flex-col justify-around h-[80vh]">
           {works.map((work) => (
             <WorkCard
               key={work.id}

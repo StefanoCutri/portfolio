@@ -21,8 +21,8 @@ a:hover{
     color: var(--main-text-color) !important;
 }
 
-@media (min-width: 1270px) {
-    h1{
-        /* color: red; */
-    }
+@media (min-width: 768px) {
+ .about-info{
+    margin: 12% !important;
+ }
 }
