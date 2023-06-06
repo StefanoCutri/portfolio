@@ -1,8 +1,8 @@
 :root {
-    --main-text-color: #52b788;
-    --main-bg-color: #0f2338;
-    --secondary-bg-color: #173452;
-    --text-white: #fff;
+  --main-text-color: #52b788;
+  --main-bg-color: #0f2338;
+  --secondary-bg-color: #173452;
+  --text-white: #fff;
 }
 
 .technologies {
@@ -15,20 +15,16 @@
   padding: 1rem 0;
 }
 
-.tech-item::before{
-    content: '\25ba';
-    padding-left: 0.5em;
-    color: var(--main-text-color);
+.tech-item::before {
+  content: "\25ba";
+  padding-left: 0.5em;
+  color: var(--main-text-color);
 }
 
-.project-link{
-  margin:  .4rem;
+.project-link {
+  margin: 0.4rem;
 }
 
-.project-link:hover i{
+.project-link:hover i {
   color: var(--main-text-color) !important;
 }
-
-/* .cards-container{
-  padding-bottom: 50%;
-} */
