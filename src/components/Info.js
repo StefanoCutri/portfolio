@@ -27,7 +27,7 @@ export const Info = () => {
         </p>
         <div className="flex flex-row justify-start mt-3">
           <a href={CV} download="Stefano Cutri RESUME.pdf">
-            <button className="button type3">Download</button>
+            <button className="button type3">Download Resume</button>
           </a>
         </div>
       </div>
