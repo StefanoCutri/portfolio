@@ -16,7 +16,7 @@ export const About = () => {
               className="bg-[#52b788] h-1 ml-5"
               style={{
                 height: 0.5,
-                width: "40%",
+                width: "20%",
               }}
             ></div>
           </div>

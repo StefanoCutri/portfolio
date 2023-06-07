@@ -1,13 +1,39 @@
 :root {
-    --main-text-color: #52b788;
-    --main-bg-color: #0f2338;
-    --secondary-bg-color: #173452;
-    --text-white: #fff;
+  --main-text-color: #52b788;
+  --main-bg-color: #0f2338;
+  --secondary-bg-color: #173452;
+  --text-white: #fff;
 }
 
-.work-item::before{
-    content: '\25ba';
-    padding-left: 0.5em;
-    padding-right: 0.5rem;
-    color: var(--main-text-color);
+.work-item::before {
+  content: "\25ba";
+  padding-left: 0.5em;
+  padding-right: 0.5rem;
+  color: var(--main-text-color);
+}
+
+@media (min-width: 768px) {
+  .work {
+    padding-top: 10%;
+  }
+
+  .work div {
+    margin: 0 !important;
+  }
+
+  .work-header {
+    /* justify-content: start;
+    padding-left: 10% !important; */
+  }
+
+  .work-header h2{
+    padding-right: 1rem;
+  }
+
+  .works-container {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    /* height: 50vh; */
+  }
 }
