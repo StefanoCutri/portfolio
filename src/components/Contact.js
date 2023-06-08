@@ -16,30 +16,45 @@ export const Contact = () => {
           contact me do not hesitate to send me a message!
         </p>
       </div>
+      <form>
+        <div className="flex flex-row justify-start items-center p-2">
+          <label> First Name: </label>
+          <input type="text" placeholder="" />
+        </div>
+        <div className="flex flex-row justify-start items-center p-2">
+          <label> Last Name: </label>
+          <input type="text" placeholder="" />
+        </div>
+        <div className="flex flex-row justify-start items-center p-2">
+          <label> Your Email: </label>
+          <input type="text" placeholder="" />
+        </div>
+        <button> Submit </button>
+      </form>
       <div className="flex flex-col h-[40vh] items-center justify-evenly">
-        <a href="mailto:stefanocutristecco@gmail.com">
+        <a href="mailto:stefanocutristecco@gmail.com?subject=Email Subject&body=Contents of email">
           <button className="button type3">Let's talk!</button>
         </a>
       </div>
       <div className="flex flex-col items-center justify-end h-[30%]">
-      <div className="flex flex-row justify-evenly w-[100%] pb-3">
-        <a href="https://github.com/stefanocutri">
-          <FontAwesomeIcon
-            icon={faGithub}
-            color="white"
-            className="social-link"
-            size="lg"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/stefano-cutri-601b4b224/">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            color="white"
-            className="social-link"
-            size="lg"
-          />
-        </a>
-      </div>
+        <div className="flex flex-row justify-evenly w-[100%] pb-3">
+          <a href="https://github.com/stefanocutri">
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="white"
+              className="social-link"
+              size="lg"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/stefano-cutri-601b4b224/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="white"
+              className="social-link"
+              size="lg"
+            />
+          </a>
+        </div>
         <a href="https://github.com/StefanoCutri/portfolio">
           <p className="text-white font-mono text-sm social-link">
             Designed and Developed by Stefano Cutri
