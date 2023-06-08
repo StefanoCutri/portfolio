@@ -17,15 +17,18 @@ export const Contact = () => {
         </p>
       </div>
       <form>
-        <div className="flex flex-row justify-start items-center p-2">
+        <div className="flex flex-row justify-start
+         items-center p-2">
           <label> First Name: </label>
           <input type="text" placeholder="" />
         </div>
-        <div className="flex flex-row justify-start items-center p-2">
+        <div className="flex flex-row justify-start
+         items-center p-2">
           <label> Last Name: </label>
           <input type="text" placeholder="" />
         </div>
-        <div className="flex flex-row justify-start items-center p-2">
+        <div className="flex flex-row justify-start
+         items-center p-2">
           <label> Your Email: </label>
           <input type="text" placeholder="" />
         </div>
