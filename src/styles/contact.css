@@ -5,13 +5,7 @@
   --main-bg-color: #0f2338;
   --secondary-bg-color: #173452;
   --text-white: #fff;
-}
-
-* {
-  box-sizing: border-box;
-}
-#contact {
-  height:90vh;
+  --secondary-text-color: #8892b0;
 }
 
 .button {
@@ -73,16 +67,15 @@
 
 /* Form */
 form{
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); */
-  background: rgba(0,0,0,.1);
-  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15% 0 0 0;
+}
+
+form div{
+  margin: .5rem 0 !important;
 }
 
 label{
@@ -94,24 +87,27 @@ label{
 }
 
 input[type=text]{
+  background: none;
+  transition: all .5s ease-out;
   display: inline-block;
   border: none;
   text-align: left;
-  box-shadow: 3px 2px rgba(121, 83, 210,.3 );
+  box-shadow: 3px 2px var(--main-text-color);
   padding: 10px;
-  width: 350px;
   margin: 10px 0;
   background: transparent;
   color: #FFF;
+  font-size: .9rem;
 }
 
 input[type=text]:focus{
   background: none;
-  border: none;
+  outline: none;
+  border: none !important;
   color: #FFF;
 }
 
-button{
+/* button{
   background: transparent;
   color: #FFF;
   font-family: sans-serif;
@@ -121,3 +117,8 @@ button{
   padding: 10px 30px;
   border: 2px solid #FFF;
 }
+
+button:hover{
+  background: transparent;
+  border: 2px solid rgba(69, 39, 160, .4);
+} */

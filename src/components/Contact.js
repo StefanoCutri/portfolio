@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export const Contact = () => {
   return (
     <div className="info-container" id="contact">
-      <div className="flex flex-row items-center justify-center mb-3">
+      <div className="flex flex-row items-center justify-center mb-3 pt-[25%]">
         <h2 className="font-bold text-2xl">Get in touch</h2>
       </div>
       <div className="flex flex-row justify-center items-center mt-6">
@@ -17,30 +17,35 @@ export const Contact = () => {
         </p>
       </div>
       <form>
-        <div className="flex flex-row justify-start
-         items-center p-2">
+        <div
+          className="flex flex-row justify-start
+         items-center p-2"
+        >
           <label> First Name: </label>
           <input type="text" placeholder="" />
         </div>
-        <div className="flex flex-row justify-start
-         items-center p-2">
+        <div
+          className="flex flex-row justify-start
+         items-center p-2"
+        >
           <label> Last Name: </label>
           <input type="text" placeholder="" />
         </div>
-        <div className="flex flex-row justify-start
-         items-center p-2">
+        <div
+          className="flex flex-row justify-start
+         items-center p-2"
+        >
           <label> Your Email: </label>
           <input type="text" placeholder="" />
         </div>
-        <button> Submit </button>
       </form>
-      <div className="flex flex-col h-[40vh] items-center justify-evenly">
+      <div className="flex flex-col items-center justify-evenly">
         <a href="mailto:stefanocutristecco@gmail.com?subject=Email Subject&body=Contents of email">
           <button className="button type3">Let's talk!</button>
         </a>
       </div>
-      <div className="flex flex-col items-center justify-end h-[30%]">
-        <div className="flex flex-row justify-evenly w-[100%] pb-3">
+      <div className="flex flex-col items-center justify-endss">
+        <div className="flex flex-row justify-evenly pb-3">
           <a href="https://github.com/stefanocutri">
             <FontAwesomeIcon
               icon={faGithub}

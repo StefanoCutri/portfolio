@@ -110,6 +110,7 @@ nav {
   right: 25px;
   transform: translateY(-50%);
   display: none;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
