@@ -111,18 +111,26 @@ input[type=text]:focus{
   color: #FFF;
 }
 
-/* button{
-  background: transparent;
-  color: #FFF;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin: 20px 0;
-  padding: 10px 30px;
-  border: 2px solid #FFF;
+.social-links{
+position: fixed;
+left: 0;
+bottom: 0;
+padding-left: 2%;
 }
 
-button:hover{
-  background: transparent;
-  border: 2px solid rgba(69, 39, 160, .4);
-} */
+.socials-container{
+  flex-direction: column !important;
+}
+
+@media (min-width: 768px) {
+  form{
+     padding: 2rem 0 0 0;
+  }
+  .contact-info{
+    padding-top: 10% !important;
+  }
+
+  .portfolio-link{
+    font-size: 1.1rem;
+  }
+ }

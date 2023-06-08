@@ -6,8 +6,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Contact = () => {
   return (
-    <div className="info-container" id="contact">
-      <div className="flex flex-row items-center justify-center mb-3 pt-[25%]">
+    <div className="info-container relative" id="contact">
+      <div className="flex flex-row items-center justify-center mb-3 pt-[25%] contact-info">
         <h2 className="font-bold text-2xl">Get in touch</h2>
       </div>
       <div className="flex flex-row justify-center items-center mt-6">
@@ -44,9 +44,9 @@ export const Contact = () => {
           <button className="button type3">Let's talk!</button>
         </a>
       </div>
-      <div className="flex flex-col items-center justify-end h-[20%]">
-        <div className="flex flex-row justify-evenly pb-3">
-          <a href="https://github.com/stefanocutri" className="pr-5">
+      <div className="flex flex-col items-center justify-end h-[10%] social-links">
+        <div className="flex flex-row justify-evenly pb-3 socials-container">
+          <a href="https://github.com/stefanocutri" className="pb-3">
             <FontAwesomeIcon
               icon={faGithub}
               color="white"
@@ -63,11 +63,6 @@ export const Contact = () => {
             />
           </a>
         </div>
-        <a href="https://github.com/StefanoCutri/portfolio">
-          <p className="text-white font-mono text-sm social-link">
-            Designed and Developed by Stefano Cutri
-          </p>
-        </a>
       </div>
     </div>
   );

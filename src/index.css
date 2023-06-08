@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -20,14 +20,16 @@
 html,
 body {
   height: 100vh;
+  background-color: var(--main-bg-color);
 }
 
 h2 {
   color: var(--text-white);
 }
 
-p{
-  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+p {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
 
 .info-container {
@@ -35,9 +37,7 @@ p{
 }
 
 @media (min-width: 768px) {
-
-h2{
-  font-size: 2.2rem !important;
+  h2 {
+    font-size: 2.2rem !important;
+  }
 }
-}
-

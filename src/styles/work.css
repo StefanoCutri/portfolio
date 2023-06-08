@@ -22,8 +22,7 @@
   }
 
   .work-header {
-    /* justify-content: start;
-    padding-left: 10% !important; */
+    padding-left: 12% !important;
   }
 
   .work-header h2{
@@ -34,6 +33,5 @@
     flex-direction: row;
     align-items: center;
     margin: 0;
-    /* height: 50vh; */
   }
 }
