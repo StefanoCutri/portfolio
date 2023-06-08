@@ -64,6 +64,9 @@
 .social-link:hover{
   color: var(--main-text-color);
 }
+.social-link{
+  transition: all .8s ease;
+}
 
 /* Form */
 form{
@@ -72,6 +75,7 @@ form{
   justify-content: center;
   align-items: center;
   padding: 15% 0 0 0;
+  background-color: var(--main-bg-color);
 }
 
 form div{

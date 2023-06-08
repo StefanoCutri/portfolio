@@ -39,19 +39,19 @@ export const Contact = () => {
           <input type="text" placeholder="" />
         </div>
       </form>
-      <div className="flex flex-col items-center justify-evenly">
+      <div className="flex flex-col items-center justify-evenly mt-10">
         <a href="mailto:stefanocutristecco@gmail.com?subject=Email Subject&body=Contents of email">
           <button className="button type3">Let's talk!</button>
         </a>
       </div>
-      <div className="flex flex-col items-center justify-endss">
+      <div className="flex flex-col items-center justify-end h-[20%]">
         <div className="flex flex-row justify-evenly pb-3">
-          <a href="https://github.com/stefanocutri">
+          <a href="https://github.com/stefanocutri" className="pr-5">
             <FontAwesomeIcon
               icon={faGithub}
               color="white"
               className="social-link"
-              size="lg"
+              size="2x"
             />
           </a>
           <a href="https://www.linkedin.com/in/stefano-cutri-601b4b224/">
@@ -59,7 +59,7 @@ export const Contact = () => {
               icon={faLinkedin}
               color="white"
               className="social-link"
-              size="lg"
+              size="2x"
             />
           </a>
         </div>
