@@ -11,32 +11,30 @@ export const Contact = () => {
         <h2 className="font-bold text-2xl">Get in touch</h2>
       </div>
       <div className="flex flex-row justify-center items-center mt-6">
-        <p className="text-[#8892b0] px-5 text-center">
+        <p className="text-[#8892b0] px-5 text-center contact-text">
           I'm currently open to new positions, so if you are interested in
           contact me do not hesitate to send me a message!
         </p>
       </div>
       <form>
         <div
-          className="flex flex-row justify-start
+          className="flex flex-col justify-start
          items-center p-2"
         >
-          <label> First Name: </label>
-          <input type="text" placeholder="" />
+          <input type="text" placeholder="First name" />
         </div>
         <div
-          className="flex flex-row justify-start
+          className="flex flex-col justify-start
          items-center p-2"
         >
-          <label> Last Name: </label>
-          <input type="text" placeholder="" />
+          <input type="text" placeholder="Email" />
         </div>
         <div
-          className="flex flex-row justify-start
+          className="flex flex-col justify-start
          items-center p-2"
         >
-          <label> Your Email: </label>
-          <input type="text" placeholder="" />
+          <textarea/>
+          <input type="text" placeholder="message" />
         </div>
       </form>
       <div className="flex flex-col items-center justify-evenly mt-10">
@@ -44,9 +42,9 @@ export const Contact = () => {
           <button className="button type3">Let's talk!</button>
         </a>
       </div>
-      <div className="flex flex-col items-center justify-end h-[10%] social-links">
-        <div className="flex flex-row justify-evenly pb-3 socials-container">
-          <a href="https://github.com/stefanocutri" className="pb-3">
+      <div className="flex flex-col items-start justify-end h-[10%] social-links">
+        <div className="flex flex-row justify-evenly pl-3 pb-2 socials-container">
+          <a href="https://github.com/stefanocutri" className="pr-3">
             <FontAwesomeIcon
               icon={faGithub}
               color="white"
