@@ -34,7 +34,6 @@ export const Contact = () => {
          items-center p-2"
         >
           <textarea/>
-          <input type="text" placeholder="message" />
         </div>
       </form>
       <div className="flex flex-col items-center justify-evenly mt-10">
