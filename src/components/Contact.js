@@ -33,11 +33,7 @@ export const Contact = () => {
           className="flex flex-col justify-start
          items-center p-2"
         >
-        <div class="paper">
-    <div class="paper-content">
-        <textarea autofocus></textarea>
-    </div>
-</div>
+          <textarea placeholder="Your Message"></textarea>
         </div>
       </form>
       <div className="flex flex-col items-center justify-evenly mt-10">
