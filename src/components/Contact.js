@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import "../styles/contact.css";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "../styles/contact.css";
+
+
 
 export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_l93nyxm",
+        "template_cr9bxtu",
+        form.current,
+        "kg3iXeVEPLg6L0gl6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="info-container relative" id="contact">
       <div className="flex flex-row items-center justify-center mb-3 pt-[25%] contact-info">
@@ -16,31 +39,33 @@ export const Contact = () => {
           contact me do not hesitate to send me a message!
         </p>
       </div>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Name" name="user_name" />
         </div>
         <div
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Email" name="user_email" />
         </div>
         <div
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <textarea placeholder="Your Message"></textarea>
+          <textarea placeholder="Your Message" name="message"></textarea>
+        </div>
+        <div className="flex flex-col items-center justify-evenly mt-3">
+          <a
+            href="mailto:stefanocutristecco@gmail.com"
+          >
+            <button className="button type3">Let's talk!</button>
+          </a>
         </div>
       </form>
-      <div className="flex flex-col items-center justify-evenly mt-10">
-        <a href="mailto:stefanocutristecco@gmail.com?subject=Email Subject&body=Contents of email">
-          <button className="button type3">Let's talk!</button>
-        </a>
-      </div>
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
         <div className="flex flex-row justify-evenly pl-3 pb-2 socials-container">
           <a href="https://github.com/stefanocutri" className="pr-3">
