@@ -8,12 +8,11 @@ import "../styles/contact.css";
 import { useForm } from "../hooks/useForm";
 
 export const Contact = () => {
-
   const [values, handleInputChange] = useForm({
     user_name: "",
     user_email: "",
     message: "",
-  })
+  });
   // const [values, setValues] = useState({
   //   user_name: "",
   //   user_email: "",
@@ -43,12 +42,28 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          toast(result.text);
+          toast.success("Email sent!", {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: "dark",
+          });
         },
         (error) => {
-          console.log(error.text);
-          toast(error.text);
+          toast.error(error.text, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
   };
@@ -110,15 +125,14 @@ export const Contact = () => {
       </form>
       <ToastContainer
         position="top-center"
-        autoClose={2000}
+        autoClose={2500}
         hideProgressBar={true}
-        newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
-        draggable={false}
+        draggable
         pauseOnHover={false}
-        theme="light"
+        theme="dark"
       />
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
         <div className="flex flex-row justify-evenly pl-3 pb-3 socials-container">
