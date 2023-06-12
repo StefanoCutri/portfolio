@@ -13,19 +13,7 @@ export const Contact = () => {
     user_email: "",
     message: "",
   });
-  // const [values, setValues] = useState({
-  //   user_name: "",
-  //   user_email: "",
-  //   message: "",
-  // });
 
-  // const handleInputChange = ({ target }) => {
-  //   console.log(values);
-  //   setValues({
-  //     ...values,
-  //     [target.name]: target.value,
-  //   });
-  // };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -84,6 +72,7 @@ export const Contact = () => {
          items-center p-2"
         >
           <input
+            autoComplete="off"
             required
             onChange={handleInputChange}
             value={values.name}
@@ -97,6 +86,7 @@ export const Contact = () => {
          items-center p-2"
         >
           <input
+            autoComplete="off"
             required
             onChange={handleInputChange}
             value={values.email}

@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { slideInLeft } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import "../styles/header.css";
 
 export const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const backgroundRef = useRef();
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -20,11 +19,12 @@ export const Header = () => {
   return (
     <nav
       className="navigation px-5 flex flex-row justify-between"
-      ref={backgroundRef}
     >
-      <p href="/" className="brand-name">
+      <a href="/#home">
+      <p className="brand-name">
         Stefano Cutri
       </p>
+      </a>
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
       </button>

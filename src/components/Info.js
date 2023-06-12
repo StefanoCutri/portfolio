@@ -4,7 +4,7 @@ import "../styles/info.css";
 
 export const Info = () => {
   return (
-    <div className="flex flex-1 flex-col info-container" id="#home">
+    <div className="flex flex-1 flex-col info-container" id="home">
       <div className="flex flex-col justify-start items-start ml-[5%] mt-[25%] info">
         <h1>Hi, I'm</h1>
         <h1 className="text-white text-6xl py-3">Stefano Cutri.</h1>
