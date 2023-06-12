@@ -1,15 +1,39 @@
-import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/contact.css";
+import { useForm } from "../hooks/useForm";
 
 export const Contact = () => {
+
+  const [values, handleInputChange] = useForm({
+    user_name: "",
+    user_email: "",
+    message: "",
+  })
+  // const [values, setValues] = useState({
+  //   user_name: "",
+  //   user_email: "",
+  //   message: "",
+  // });
+
+  // const handleInputChange = ({ target }) => {
+  //   console.log(values);
+  //   setValues({
+  //     ...values,
+  //     [target.name]: target.value,
+  //   });
+  // };
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Send email and notify
+    console.log("sent email!");
     emailjs
       .sendForm(
         "service_l93nyxm",
@@ -20,9 +44,11 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast(result.text);
         },
         (error) => {
           console.log(error.text);
+          toast(error.text);
         }
       );
   };
@@ -42,28 +68,58 @@ export const Contact = () => {
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <input type="text" placeholder="Name" name="user_name" />
+          <input
+            required
+            onChange={handleInputChange}
+            value={values.name}
+            type="text"
+            placeholder="Name"
+            name="user_name"
+          />
         </div>
         <div
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <input type="text" placeholder="Email" name="user_email" />
+          <input
+            required
+            onChange={handleInputChange}
+            value={values.email}
+            type="email"
+            placeholder="Email"
+            name="user_email"
+          />
         </div>
         <div
           className="flex flex-col justify-start
          items-center p-2"
         >
-          <textarea placeholder="Your Message" name="message"></textarea>
+          <textarea
+            required
+            onChange={handleInputChange}
+            value={values.message}
+            placeholder="Your Message"
+            name="message"
+          ></textarea>
         </div>
         <div className="flex flex-col items-center justify-evenly mt-3">
-          <a
-            href="mailto:stefanocutristecco@gmail.com"
-          >
+          <a href="mailto:stefanocutristecco@gmail.com">
             <button className="button type3">Let's talk!</button>
           </a>
         </div>
       </form>
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover={false}
+        theme="light"
+      />
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
         <div className="flex flex-row justify-evenly pl-3 pb-3 socials-container">
           <a href="https://github.com/stefanocutri" className="pr-3">
