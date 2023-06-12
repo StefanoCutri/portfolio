@@ -25,4 +25,8 @@ a:hover{
  .info{
     margin: 12% !important;
  }
+
+ h1{
+    font-size: 3.75rem !important;
+ }
 }

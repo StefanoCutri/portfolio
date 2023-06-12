@@ -100,6 +100,7 @@ export const Contact = () => {
          items-center p-2"
         >
           <textarea
+          className="w-[100%]"
             required
             onChange={handleInputChange}
             value={values.message}
