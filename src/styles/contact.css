@@ -158,6 +158,7 @@ textarea {
   
   .socials-container{
     flex-direction: column !important;
+    padding: 15px;
   }
 
   .socials-container a{

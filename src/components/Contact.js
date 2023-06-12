@@ -28,7 +28,7 @@ export const Contact = () => {
   };
   return (
     <div className="info-container relative" id="contact">
-      <div className="flex flex-row items-center justify-center mb-3 pt-[20%] contact-info">
+      <div className="flex flex-row items-center justify-center mb-3 pt-[14%] contact-info">
         <h2 className="font-bold text-2xl">Get in touch</h2>
       </div>
       <div className="flex flex-row justify-center items-center mt-6">
@@ -65,7 +65,7 @@ export const Contact = () => {
         </div>
       </form>
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
-        <div className="flex flex-row justify-evenly pl-3 pb-12 socials-container">
+        <div className="flex flex-row justify-evenly pl-3 pb-3 socials-container">
           <a href="https://github.com/stefanocutri" className="pr-3">
             <FontAwesomeIcon
               icon={faGithub}
