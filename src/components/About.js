@@ -1,5 +1,7 @@
 import React from "react";
 import me from "../assets/me.jpeg";
+import { ProjectCard } from "./ProjectCard";
+import projects from "../data/projects.json";
 import "../styles/about.css";
 
 export const About = () => {
