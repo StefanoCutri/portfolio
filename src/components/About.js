@@ -5,7 +5,7 @@ import "../styles/about.css";
 export const About = () => {
   return (
     <div
-      className="flex flex-col items-start justify-evenly info-container py-3"
+      className="flex flex-col items-start justify-evenly info-container pb-32"
       id="about"
     >
       <div className="mt-[60%] about">

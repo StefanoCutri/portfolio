@@ -16,6 +16,7 @@ const App = () => {
     <>
       <Header />
       <div
+      className="info-container"
         onClick={() => {
           navbarState.isNavbarOpen && handleOpen(false);
         }}
