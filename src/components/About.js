@@ -8,7 +8,7 @@ export const About = () => {
       className="flex flex-col items-start justify-evenly info-container pb-32"
       id="about"
     >
-      <div className="mt-[60%] about">
+      <div className="mt-[90%] about">
         <div className="flex flex-col justify-start">
           <div className="flex flex-row items-center justify-start mb-3">
             <h2 className="font-bold text-2xl ml-6">About me</h2>
@@ -33,7 +33,7 @@ export const About = () => {
         </div>
         <img
           src={me}
-          className="h-[50%] m-auto rounded-full shadow-2xl my-image"
+          className="h-[40%] m-auto rounded-full shadow-2xl my-image"
           alt="Stefano"
         />
       </div>
