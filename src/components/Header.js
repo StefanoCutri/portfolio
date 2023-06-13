@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
-import Radium, { StyleRoot } from "radium";
 import NavbarContext from "../context/NavbarContext";
-import { slideInLeft } from "react-animations";
 
 import "../styles/header.css";
 
@@ -18,13 +16,6 @@ export const Header = () => {
     }
   };
 
-  // Animations
-  const styles = {
-    slideInLeft: {
-      animation: "x 1s",
-      animationName: Radium.keyframes(slideInLeft, "slideInLeft"),
-    },
-  };
   return (
     <nav className="navigation px-5 flex flex-row justify-between">
       <a href="/#home">
@@ -33,14 +24,12 @@ export const Header = () => {
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
       </button>
-      <StyleRoot>
         <div
           className={
             navbarState.isNavbarOpen
               ? "navigation-menu expanded"
               : "navigation-menu"
           }
-          style={styles.slideInLeft}
         >
           <ul>
             <li className="animate__slideInLeft">
@@ -65,7 +54,6 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-      </StyleRoot>
     </nav>
   );
 };

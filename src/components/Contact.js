@@ -132,7 +132,7 @@ export const Contact = () => {
       {/* Social links */}
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
         <div className="flex flex-row justify-evenly pl-3 pb-3 socials-container">
-          <a href="https://github.com/stefanocutri" className="pr-3">
+          <a href="https://github.com/stefanocutri" className="pr-4">
             <FontAwesomeIcon
               icon={faGithub}
               color="white"
