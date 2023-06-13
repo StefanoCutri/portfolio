@@ -4,7 +4,7 @@ import "../styles/about.css";
 
 export const About = () => {
   return (
-    <div id="about" className="pb-20 py-3">
+    <div id="about" className="pb-20 pt-20">
     <div className="flex flex-row items-center justify-start mb-3 pl-[5%] work-header">
           <h2 className="font-bold text-2xl">About me</h2>
           <div
