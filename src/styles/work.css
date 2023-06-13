@@ -1,4 +1,4 @@
-:root {
+!:root {
   --main-text-color: #52b788;
   --main-bg-color: #0f2338;
   --secondary-bg-color: #173452;
@@ -15,7 +15,7 @@
 /* Media Queris */
 @media (min-width: 768px) {
   .work {
-    padding-top: 10%;
+    padding-top: 12% !important;
   }
 
   .work div {
@@ -31,7 +31,7 @@
   }
 
   .works-container {
-    flex-direction: row;
+    flex-direction: row !important;
     align-items: center;
     margin: 0;
     padding: 0 10% !important;

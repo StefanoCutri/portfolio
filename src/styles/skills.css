@@ -34,7 +34,7 @@
 @media (min-width: 768px) {
   .skills-header {
     margin: 0;
-    padding-top: 10%;
+    padding-top: 8% !important;
     justify-content: start;
     justify-content: start;
   }
