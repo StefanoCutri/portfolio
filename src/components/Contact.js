@@ -1,13 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useForm } from "../hooks/useForm";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/contact.css";
-import { useForm } from "../hooks/useForm";
 
 export const Contact = () => {
+  // Form
   const [values, handleInputChange] = useForm({
     user_name: "",
     user_email: "",
@@ -57,6 +58,7 @@ export const Contact = () => {
   };
   return (
     <div className="info-container relative" id="contact">
+      {/* Header */}
       <div className="flex flex-row items-center justify-center mb-3 pt-[14%] contact-info">
         <h2 className="font-bold text-2xl">Get in touch</h2>
       </div>
@@ -66,6 +68,7 @@ export const Contact = () => {
           contact me do not hesitate to send me a message!
         </p>
       </div>
+      {/* Form */}
       <form ref={form} onSubmit={sendEmail}>
         <div
           className="flex flex-col justify-start
@@ -100,7 +103,7 @@ export const Contact = () => {
          items-center p-2"
         >
           <textarea
-          className="w-[100%]"
+            className="w-[100%]"
             required
             onChange={handleInputChange}
             value={values.message}
@@ -114,6 +117,7 @@ export const Contact = () => {
           </a>
         </div>
       </form>
+      {/* Toast message */}
       <ToastContainer
         position="top-center"
         autoClose={2500}
@@ -125,6 +129,7 @@ export const Contact = () => {
         pauseOnHover={false}
         theme="dark"
       />
+      {/* Social links */}
       <div className="flex flex-col items-start justify-end h-[10%] social-links">
         <div className="flex flex-row justify-evenly pl-3 pb-3 socials-container">
           <a href="https://github.com/stefanocutri" className="pr-3">

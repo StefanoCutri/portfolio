@@ -1,32 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 :root {
-    --main-text-color: #52b788;
-    --main-bg-color: #0f2338;
-    --secondary-bg-color: #173452;
-    --text-white: #fff;
+  --main-text-color: #52b788;
+  --main-bg-color: #0f2338;
+  --secondary-bg-color: #173452;
+  --text-white: #fff;
 }
 
-div{
-    background-color: var(--main-bg-color);
-    padding: 0;
-    color: var(--main-text-color);
+div {
+  background-color: var(--main-bg-color);
+  padding: 0;
+  color: var(--main-text-color);
 }
 
-h1{
-    font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif
+h1 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
 
-a:hover{
-    color: var(--main-text-color) !important;
+a:hover {
+  color: var(--main-text-color) !important;
 }
+
+/* Media Queris */
 
 @media (min-width: 768px) {
- .info{
+  .info {
     margin: 12% !important;
- }
+  }
 
- h1{
+  h1 {
     font-size: 3.75rem !important;
- }
+  }
 }

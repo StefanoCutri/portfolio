@@ -27,6 +27,7 @@ export const Skills = () => {
         </ul>
       </div>
       <div className="cards-container">
+        {/* Project Cards */}
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

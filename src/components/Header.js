@@ -1,14 +1,15 @@
-import React, { useContext, useState } from "react";
-import { slideInLeft } from "react-animations";
+import React, { useContext } from "react";
 import Radium, { StyleRoot } from "radium";
-import "../styles/header.css";
 import NavbarContext from "../context/NavbarContext";
+import { slideInLeft } from "react-animations";
+
+import "../styles/header.css";
 
 export const Header = () => {
+  // Context
   const { navbarState, handleOpen } = useContext(NavbarContext);
 
-  console.log(navbarState.isNavbarOpen);
-
+  //Close and Open Navbar
   const handleShowNavbar = () => {
     if (!navbarState.isNavbarOpen) {
       handleOpen(true);
@@ -17,6 +18,7 @@ export const Header = () => {
     }
   };
 
+  // Animations
   const styles = {
     slideInLeft: {
       animation: "x 1s",

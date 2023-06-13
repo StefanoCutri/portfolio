@@ -8,7 +8,7 @@
     margin-top: 0 !important;
   }
 
-  .about > div > div > h2{
+  .about > div > div > h2 {
     margin: 0;
   }
   .my-image {
@@ -17,18 +17,17 @@
     top: 40%;
   }
 
-#about{
-  padding: 0 !important;
-}
+  #about {
+    padding: 0 !important;
+  }
 
-.about-description{
-  padding: 0 !important;
-  justify-content: start !important;
-}
+  .about-description {
+    padding: 0 !important;
+    justify-content: start !important;
+  }
 
-.about-description p{
-  /* margin-left: 16%; */
-  width: 100%;
-  font-size: 1.1rem;
-}
+  .about-description p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
 }

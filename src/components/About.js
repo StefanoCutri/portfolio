@@ -1,6 +1,6 @@
 import React from "react";
 import me from "../assets/me.jpeg";
-import "../styles/about.css"
+import "../styles/about.css";
 
 export const About = () => {
   return (
@@ -26,13 +26,12 @@ export const About = () => {
               apps! <br />
               My passion for technology started back in 2020 while I was in
               lockdown due to the pandemic and saw a Web Development free course
-              and thought it could be a good idea to give it a try!
-              From that momento to now, I've
+              and thought it could be a good idea to give it a try! From that
+              momento to now, I've
             </p>
           </div>
         </div>
         <img
-  
           src={me}
           className="h-[50%] m-auto rounded-full shadow-2xl my-image"
           alt="Stefano"

@@ -8,6 +8,7 @@
   --secondary-text-color: #8892b0;
 }
 
+/* Custom Button */
 .button {
   z-index: 1;
   position: relative;
@@ -61,15 +62,15 @@
   height: 100%;
 }
 
-.social-link:hover{
+.social-link:hover {
   color: var(--main-text-color);
 }
-.social-link{
-  transition: all .8s ease;
+.social-link {
+  transition: all 0.8s ease;
 }
 
 /* Form */
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,21 +79,21 @@ form{
   background-color: var(--main-bg-color);
 }
 
-form div{
-  margin: .5rem 0 !important;
+form div {
+  margin: 0.5rem 0 !important;
 }
 
-label{
- font-family: sans-serif;
+label {
+  font-family: sans-serif;
   letter-spacing: 6px;
   text-transform: uppercase;
-  font-size: .8em;
-  color: #FFF;
+  font-size: 0.8em;
+  color: #fff;
 }
 
-input[type=text]{
+input[type="text"] {
   background: none;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   display: inline-block;
   border: none;
   text-align: left;
@@ -100,20 +101,20 @@ input[type=text]{
   padding: 10px;
   margin: 10px 0;
   background: transparent;
-  color: #FFF;
-  font-size: .9rem;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
-input[type=text]:focus{
+input[type="text"]:focus {
   background: none;
   outline: none;
   border: none !important;
-  color: #FFF;
+  color: #fff;
 }
 
-input[type=email]{
+input[type="email"] {
   background: none;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   display: inline-block;
   border: none;
   text-align: left;
@@ -121,17 +122,16 @@ input[type=email]{
   padding: 10px;
   margin: 10px 0;
   background: transparent;
-  color: #FFF;
-  font-size: .9rem;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
-input[type=email]:focus{
+input[type="email"]:focus {
   background: none;
   outline: none;
   border: none !important;
-  color: #FFF;
+  color: #fff;
 }
-
 
 textarea {
   background-color: transparent;
@@ -150,19 +150,21 @@ textarea {
   z-index: 1;
 }
 
-.Toastify__toast-body{
+/* Toast Message */
+.Toastify__toast-body {
   background: transparent !important;
   color: var(--text-white) !important;
 }
 
-.Toastify__toast-body > div:last-child{
+.Toastify__toast-body > div:last-child {
   background: transparent !important;
   color: var(--text-white) !important;
 }
-.Toastify__zoom-enter{
+.Toastify__zoom-enter {
   background: transparent !important;
 }
 
+/* ScrollBar */
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -170,50 +172,50 @@ textarea {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-text-color); 
+  background: var(--secondary-text-color);
 }
 
 
+/* Media queris */
+
 @media (min-width: 768px) {
-  
-  .contact-text{
+  .contact-text {
     width: 600px;
   }
-  .social-links{
+  .social-links {
     position: fixed;
     left: 0;
     bottom: 0;
   }
-  
-  .socials-container{
+
+  .socials-container {
     flex-direction: column !important;
     padding: 15 px;
   }
-  
-  .socials-container a{
+
+  .socials-container a {
     padding: 5px 0;
   }
-  form{
+  form {
     padding: 2rem 0 0 0;
   }
-  .contact-info{
+  .contact-info {
     padding-top: 10% !important;
   }
 
-  .portfolio-link{
+  .portfolio-link {
     font-size: 1.1rem;
   }
-  input{
+  input {
     width: 400px;
   }
 
-  textarea{
-    width: 400px !important; 
+  textarea {
+    width: 400px !important;
   }
-
- }
+}

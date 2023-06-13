@@ -12,6 +12,7 @@
   color: var(--main-text-color);
 }
 
+/* Media Queris */
 @media (min-width: 768px) {
   .work {
     padding-top: 10%;
@@ -25,7 +26,7 @@
     padding-left: 12% !important;
   }
 
-  .work-header h2{
+  .work-header h2 {
     padding-right: 1rem;
   }
 
