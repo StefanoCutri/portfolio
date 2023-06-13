@@ -109,7 +109,7 @@ export const Contact = () => {
           ></textarea>
         </div>
         <div className="flex flex-col items-center justify-evenly mt-3">
-          <a href="mailto:stefanocutristecco@gmail.com">
+          <a>
             <button className="button type3">Let's talk!</button>
           </a>
         </div>

@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { slideInLeft } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import "../styles/header.css";
+import NavbarContext from "../context/NavbarContext";
 
 export const Header = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const { navbarState, handleOpen } = useContext(NavbarContext);
+
+  console.log(navbarState.isNavbarOpen);
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
+    if (!navbarState.isNavbarOpen) {
+      handleOpen(true);
+    } else {
+      handleOpen(false);
+    }
   };
 
   const styles = {
@@ -17,13 +24,9 @@ export const Header = () => {
     },
   };
   return (
-    <nav
-      className="navigation px-5 flex flex-row justify-between"
-    >
+    <nav className="navigation px-5 flex flex-row justify-between">
       <a href="/#home">
-      <p className="brand-name">
-        Stefano Cutri
-      </p>
+        <p className="brand-name">Stefano Cutri</p>
       </a>
       <button className="hamburger" onClick={handleShowNavbar}>
         <i className="fa-solid fa-bars fa-lg text-[#52b788]"></i>
@@ -31,22 +34,32 @@ export const Header = () => {
       <StyleRoot>
         <div
           className={
-            showNavbar ? "navigation-menu expanded" : "navigation-menu"
+            navbarState.isNavbarOpen
+              ? "navigation-menu expanded"
+              : "navigation-menu"
           }
           style={styles.slideInLeft}
         >
           <ul>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/#about">About</a>
+              <a className="navbar-link" href="/#about">
+                About
+              </a>
             </li>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/#skills">Skills</a>
+              <a className="navbar-link" href="/#skills">
+                Skills
+              </a>
             </li>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/#experience">Experience</a>
+              <a className="navbar-link" href="/#experience">
+                Experience
+              </a>
             </li>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/#contact">Contact</a>
+              <a className="navbar-link" href="/#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
