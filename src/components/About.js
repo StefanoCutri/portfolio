@@ -27,7 +27,7 @@ export const About = () => {
               My passion for technology started back in 2020 while I was in
               lockdown due to the pandemic and saw a Web Development free course
               and thought it could be a good idea to give it a try! From that
-              momento to now, I've
+              moment to now, I've been building amazing web and mobile apps!
             </p>
           </div>
         </div>
