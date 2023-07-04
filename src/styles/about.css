@@ -7,7 +7,7 @@
     margin: 0 14%;
     margin-top: 0 !important;
   }
-
+  
   .about > div > div > h2 {
     margin: 0;
   }
@@ -16,10 +16,13 @@
     position: relative;
     top: 40%;
   }
-
+  
   #about {
-    padding: 0 !important;
-  }
+    padding-left: 12% !important;  }
+
+    #about > div{
+      padding: 1% 0 !important;
+    }
 
   .about-description {
     padding: 0 !important;
@@ -29,5 +32,10 @@
   .about-description p {
     width: 100%;
     font-size: 1.1rem;
+  }
+
+  .img-container{
+    /* width: 100%; */
+    margin-left: 60%;
   }
 }
