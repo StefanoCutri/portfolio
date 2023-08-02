@@ -10,7 +10,7 @@ export const Info = () => {
         <h1 className="text-white text-5xl py-3">Stefano Cutri.</h1>
         <h1 className="text-[#8892b0] text-5xl">A Frontend Developer.</h1>
         <p className="w-[50%] text-[#8892b0]  mt-3">
-          I'm a Junior Software Engineer specializing in building Frontend
+          I'm a Junior Web Developer specializing in building Frontend
           Applications. Currently, I'm looking for new oportunities to keep
           expanding my skills, which you can see{" "}
           <a
