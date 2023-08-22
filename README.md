@@ -30,7 +30,7 @@ You can check out the live demo of my portfolio website at [stefanocutri-portfol
 
 To run this project locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/portfolio-website.git`
+1. Clone this repository: `git clone https://github.com/StefanoCutri/portfolio-website.git`
 2. Navigate to the project directory: `cd portfolio-website`
 3. Install the dependencies: `npm install`
 
