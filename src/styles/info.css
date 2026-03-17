@@ -14,8 +14,14 @@ div {
 }
 
 h1 {
-  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  font-family:
+    "Calibre",
+    "Inter",
+    "San Francisco",
+    "SF Pro Text",
+    -apple-system,
+    system-ui,
+    sans-serif;
 }
 
 a:hover {
@@ -31,5 +37,11 @@ a:hover {
 
   h1 {
     font-size: 3.75rem !important;
+  }
+}
+
+@media (max-width: 462px) {
+  #btns {
+    flex-direction: column !important
   }
 }

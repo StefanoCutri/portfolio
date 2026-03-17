@@ -20,17 +20,13 @@ export const Info = () => {
           opportunities as a Frontend or Junior Fullstack Developer.
         </p>
 
-        <div className="flex flex-row gap-4 mt-6">
+        <div id="btns" className="flex flex-row gap-4 mt-6">
           <a href="#projects">
             <button className="button type3">View Projects</button>
           </a>
 
           <a href={CV} download="Stefano Cutri RESUME.pdf">
             <button className="button type3">Download CV</button>
-          </a>
-
-          <a href="#contact">
-            <button className="button type3">Contact Me</button>
           </a>
         </div>
       </div>
