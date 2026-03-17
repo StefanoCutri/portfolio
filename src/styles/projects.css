@@ -32,14 +32,14 @@
 /* Media Queris */
 
 @media (min-width: 768px) {
-  .skills-header {
+  .projects-header {
     margin: 0;
     padding-top: 8% !important;
     justify-content: start;
     justify-content: start;
   }
 
-  .skills-container {
+  .projects-container {
     padding-left: 10%;
   }
 

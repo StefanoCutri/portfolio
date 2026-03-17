@@ -38,8 +38,8 @@ export const Header = () => {
               </a>
             </li>
             <li className="animate__slideInLeft">
-              <a className="navbar-link" href="/#skills">
-                Skills
+              <a className="navbar-link" href="/#projects">
+                Projects
               </a>
             </li>
             <li className="animate__slideInLeft">

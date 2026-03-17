@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Header } from "./components/Header";
 import { Info } from "./components/Info";
 import { About } from "./components/About";
-import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import NavbarContext from "./context/NavbarContext";
@@ -23,7 +23,7 @@ const App = () => {
       >
         <Info />
         <About />
-        <Skills />
+        <Projects />
         <Experience />
         <Contact />
       </div>
