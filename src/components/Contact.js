@@ -27,7 +27,7 @@ export const Contact = () => {
         "service_l93nyxm",
         "template_f7t4bw8",
         form.current,
-        "kg3iXeVEPLg6L0gl6"
+        "kg3iXeVEPLg6L0gl6",
       )
       .then(
         (result) => {
@@ -53,7 +53,7 @@ export const Contact = () => {
             progress: undefined,
             theme: "dark",
           });
-        }
+        },
       );
   };
   return (
@@ -112,9 +112,9 @@ export const Contact = () => {
           ></textarea>
         </div>
         <div className="flex flex-col items-center justify-evenly mt-3">
-          <a>
-            <button className="button type3">Let's talk!</button>
-          </a>
+          <button type="submit" className="button type3">
+            Let's talk!
+          </button>
         </div>
       </form>
       {/* Toast message */}
