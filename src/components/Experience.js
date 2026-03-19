@@ -16,7 +16,7 @@ export const Experience = () => {
             }}
           ></div>
         </div>
-        <div className="mt-9 flex flex-col justify-evenly h-[80vh] works-container">
+        <div className="mt-9 works-container">
           {/* Work Cards */}
           {works.map((work) => (
             <WorkCard

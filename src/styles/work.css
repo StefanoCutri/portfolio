@@ -12,14 +12,16 @@
   color: var(--main-text-color);
 }
 
-/* Media Queris */
+.works-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0 5%;
+}
+
 @media (min-width: 768px) {
   .work {
     padding-top: 12% !important;
-  }
-
-  .work div {
-    margin: 0 !important;
   }
 
   .work-header {
@@ -31,9 +33,9 @@
   }
 
   .works-container {
-    flex-direction: row !important;
-    align-items: center;
-    margin: 0;
-    padding: 0 10% !important;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 10% 0 !important;
+    align-items: start;
   }
 }

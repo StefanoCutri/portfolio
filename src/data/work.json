@@ -1,24 +1,35 @@
 [
   {
     "id": 1,
-    "company": "YouPrism",
-    "workingTime": "Jun - Nov 2022",
-    "role": "Web Developer",
+    "company": "WeLearn",
+    "workingTime": "January 2024 - February 2026",
+    "role": "Senior Webinar Specialist",
     "description": [
-      "I worked in this company as a Web Developer, creating dynamic web apps with HTML - CSS - JS",
-      "Controlled the bugfixing to mantain the apps working",
-      " I communicated directly to the clients to understand perfectly their needs"
+      "Managed and executed online webinars, ensuring smooth technical delivery and high-quality user experience.",
+      "Worked with marketing and product teams to optimize webinar funnels and increase engagement and conversions.",
+      "Handled tools, automation and platforms related to webinars, improving processes and operational efficiency."
     ]
   },
   {
     "id": 2,
-    "company": "Self Employee",
-    "workingTime": "Jun 2020 - Present ",
+    "company": "YouPrism",
+    "workingTime": "June 2022 - November 2022",
     "role": "Web Developer",
     "description": [
-      "Built a lot of web and mobile apps to keep training my skills",
-      "I've been working on personal projects to show my knowledge",
-      "Always learning new skills to mantain myself updated"
+      "Developed dynamic web applications using HTML, CSS and JavaScript, focusing on responsive and user-friendly interfaces.",
+      "Maintained and improved existing applications by identifying and fixing bugs to ensure stability and performance.",
+      "Collaborated directly with clients to understand requirements and deliver tailored solutions."
+    ]
+  },
+  {
+    "id": 3,
+    "company": "Independent Projects",
+    "workingTime": "2020 - Present",
+    "role": "Frontend / Fullstack Developer",
+    "description": [
+      "Designed and developed web applications using React, Next.js and Node.js to strengthen practical development skills.",
+      "Integrated REST APIs and built dynamic user interfaces with focus on performance and usability.",
+      "Continuously learning and applying best practices such as clean code, component-based architecture and version control with Git."
     ]
   }
 ]
