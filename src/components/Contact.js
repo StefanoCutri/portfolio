@@ -57,7 +57,7 @@ export const Contact = () => {
       );
   };
   return (
-    <div className="info-container relative" id="contact">
+    <div className="info-container" id="contact">
       {/* Header */}
       <div className="flex flex-row items-center justify-center mb-3 pt-[14%] contact-info">
         <h2 className="font-bold text-2xl">Get in touch</h2>
