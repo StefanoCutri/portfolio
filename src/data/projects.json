@@ -8,23 +8,16 @@
   },
   {
     "id": 2,
-    "title": "The Button",
-    "description": "This is a challenge I've built some time ago that immitates the online meta-game and social experiment that Reddit launched in 2015.",
-    "repository": "https://github.com/StefanoCutri/the-button",
-    "hosted": "https://stefanocutri.github.io/the-button/"
-  },
-  {
-    "id": 3,
-    "title": "Giph Expert",
-    "description": "Basic Hook-Based App that shows animated giphs from Giphy Api that can be filtered by a search query. ",
-    "repository": "https://github.com/StefanoCutri/React-GiphExpert",
-    "hosted": "https://react-giph-expert-xjt8.vercel.app"
-  },
-  {
-    "id": 4,
     "title": "Calendar App",
     "description": "MOne of the first React Applications I've built, using React-Big-Calendar to make CRUD operations in the calendar with the help of React Modal.",
     "repository": "https://github.com/StefanoCutri/calendar-app",
     "hosted": "https://calendar-mqz37rje0-stefanocutri.vercel.app/"
+  },
+    {
+    "id": 3,
+    "title": "Next.js Pokemon App",
+    "description": "MOne of the first React Applications I've built, using React-Big-Calendar to make CRUD operations in the calendar with the help of React Modal.",
+    "repository": "hhttps://github.com/StefanoCutri/next-static-pokemon",
+    "hosted": "https://next-pokemon-stefano.vercel.app/"
   }
 ]
