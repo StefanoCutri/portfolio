@@ -1,41 +1,87 @@
-:root {
-  --main-text-color: #52b788;
-  --main-bg-color: #0f2338;
-  --secondary-bg-color: #173452;
-  --text-white: #fff;
+/* ─── EXPERIENCE SECTION ─── */
+#experience {
+  min-height: 100vh;
+  padding: 120px 10% 80px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.work-item::before {
-  content: "\25ba";
-  padding-left: 0.5em;
-  padding-right: 0.5rem;
-  color: var(--main-text-color);
-}
-
+/* Grid of experience cards */
 .works-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 0 5%;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
 }
 
-@media (min-width: 768px) {
-  .work {
-    padding-top: 12% !important;
-  }
+/* Single experience card */
+.work-card {
+  border-left: 2px solid rgba(82, 183, 136, 0.2);
+  padding: 0.2rem 0 0.2rem 1.5rem;
+  transition: border-color 0.3s ease;
+}
 
-  .work-header {
-    padding-left: 12% !important;
-  }
+.work-card:hover {
+  border-color: var(--green);
+}
 
-  .work-header h2 {
-    padding-right: 1rem;
+.work-company {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--green);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.work-role {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--offwhite);
+  margin-bottom: 0.2rem;
+}
+
+.work-time {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate);
+  margin-bottom: 1rem;
+}
+
+/* Description list */
+.work-desc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.work-desc-list li {
+  color: var(--slate);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.work-desc-list li::before {
+  content: "→";
+  color: var(--green);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  #experience {
+    padding: 100px 6% 60px;
   }
 
   .works-container {
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem 10% 0 !important;
-    align-items: start;
   }
 }

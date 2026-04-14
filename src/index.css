@@ -1,43 +1,186 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;1,300&family=JetBrains+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ─── DESIGN TOKENS ─── */
 :root {
-  --main-text-color: #52b788;
-  --main-bg-color: #0f2338;
-  --secondary-bg-color: #173452;
-  --text-white: #fff;
-  --secondary-text-color: #8892b0;
+  --green: #52b788;
+  --green-dim: rgba(82, 183, 136, 0.12);
+  --green-mid: rgba(82, 183, 136, 0.35);
+  --navy: #0f2338;
+  --navy2: #0a1929;
+  --navy3: #162d44;
+  --navy4: #1e3a52;
+  --slate: #8892b0;
+  --white: #ccd6f6;
+  --offwhite: #e6f1ff;
+
+  --font-serif: "Crimson Pro", Georgia, serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", monospace;
+  --font-sans: "DM Sans", system-ui, sans-serif;
 }
 
-* {
+/* ─── RESET ─── */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100vh;
-  background-color: var(--main-bg-color);
+  background-color: var(--navy);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-h2 {
-  color: var(--text-white);
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy4);
+  border-radius: 2px;
+}
+
+/* ─── TYPOGRAPHY ─── */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  color: var(--offwhite);
 }
 
 p {
-  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--slate);
 }
 
-.info-container {
+a {
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+/* ─── SHARED SECTION LAYOUT ─── */
+.section-wrapper {
   min-height: 100vh;
+  padding: 120px 10% 80px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  h2 {
-    font-size: 2.2rem !important;
+/* ─── SECTION HEADER (numbered title + line) ─── */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3.5rem;
+}
+
+.section-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--green);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 300;
+  color: var(--offwhite);
+  white-space: nowrap;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(82, 183, 136, 0.4), transparent);
+}
+
+/* ─── BUTTONS ─── */
+.btn-primary {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 0.75rem 1.6rem;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--green-dim);
+  letter-spacing: 0.14em;
+  color: var(--green);
+}
+
+.btn-secondary {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate);
+  border: 1px solid rgba(136, 146, 176, 0.3);
+  padding: 0.75rem 1.6rem;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  color: var(--white);
+  border-color: rgba(136, 146, 176, 0.6);
+}
+
+/* ─── SCROLL REVEAL ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── TOAST OVERRIDES ─── */
+.Toastify__toast-body {
+  color: var(--white) !important;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 100px 6% 60px;
   }
 }

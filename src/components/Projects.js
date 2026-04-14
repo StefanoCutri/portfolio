@@ -1,29 +1,31 @@
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import projects from "../data/projects.json";
-
 import "../styles/projects.css";
 
 export const Projects = () => {
   return (
-    <div id="projects" className="pb-20 py-3">
-      <div className="projects-container">
-        <div className="flex flex-row items-center justify-start pl-[1.5rem] mb-3 pt-[15%] projects-header">
-          <h2 className="text-2xl font-bold">Some of my projects</h2>
-        </div>
+    <section id="projects">
+      {/* Section header */}
+      <div className="section-header reveal">
+        <span className="section-num">02.</span>
+        <h2 className="section-title">Some things I've built</h2>
+        <div className="section-line" />
       </div>
+
+      {/* Cards */}
       <div className="cards-container">
-        {/* Project Cards */}
-        {projects.map((project) => (
+        {projects.map((project, i) => (
           <ProjectCard
             key={project.id}
             title={project.title}
             description={project.description}
-            respository={project.repository}
+            repository={project.repository}
             hosted={project.hosted}
+            style={{ transitionDelay: `${i * 0.1}s` }}
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
